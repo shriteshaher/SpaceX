@@ -1,7 +1,7 @@
 <div class="container-fluid p-5¯ " style="background-color: #EAEDED;">
   <!-- Container-1-->
   <div class="container-fluid " >
-    <div class="row "  >
+    <div class="row npm i firebase-toolsp-1"  >
       <h2>SpaceX Launce Program</h2>
     </div>
   </div>
@@ -11,8 +11,8 @@
     <div class="row d-flex " style="" >
 
       <!--First Column-->
-      <div class="col-md-2 d-flex flex-column"  style="height:fit-content;">
-       <div class="rounded-3 mt-2" style="background-color: white;;">
+      <div class="col-md-3  d-flex justify-content-start"  style="height:fit-content;">
+       <div class="col-md-11 rounded-3 mt-2" style="background-color: white;;">
          <div class="fs-4 fw-bold p-1">Filter</div>
 
          <!--Succesful Launch Year Heading-->
@@ -67,11 +67,11 @@
       </div>
 
       <!--Second Column-->
-      <div class=" col-md-10  d-flex flex-wrap  card-t "    >
+      <div class=" col-md-9  d-flex flex-wrap   card-t "   >
       <ng-container  *ngFor="let space of res1 let i=index; "    >
         
         <!--Card-->
-        <div class="card  mb-2 p-2 m-2 "  style="height: 500px;" >
+        <div class="card  mb-2 p-4 m-2 "  style="height: 500px;width:15rem" >
           <img src="{{ res1[i]['links']['mission_patch_small'] }}" class="card-img-top img-fluid img-thumbnail " alt="...">
            <h5 class="card-title mb-1">{{res1[i]['mission_name']}}</h5>
            <div class="card-title fw-bold text-black ">Mission Id</div>
